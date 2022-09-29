@@ -1,0 +1,31 @@
+package Inheritances;
+class Human {
+	// Overridden method
+	//in overriding we can increase the visibility of overridden method --> private -->default-->protected-->public
+	// default ---> protected or public
+	// protected ---> public
+	// public ----> public
+	public void eat() {
+		System.out.println("Human is eating");
+	}
+}
+class Boy extends Human {
+	// Overriding method
+	public void eat() {
+		System.out.println("Boy is eating");
+	}
+}
+public class Overriding3 {
+
+	
+		// TODO Auto-generated method stub
+		public static void main(String args[]) {
+			Boy obj = new Boy();
+			obj.eat();
+			Human obj1 = new Human();
+			obj1.eat();
+		}
+	
+	}
+
+
